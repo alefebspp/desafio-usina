@@ -1,3 +1,15 @@
+# Como rodar o projeto
+
+## Front-end
+
+Primeiramente, ir para a pasta front-end. Baixar as dependências com o comando npm install. Após isso, criar um arquivo chamado .env no root da pasta e copiar o conteúdo do arquivo .env.example para o arquivo criado. Após isso, rodar o comando npm run dev para acessar o projeto em localhost na porta 5173.
+
+## Back-end
+
+Ir para a pasta back-end. Baixar as dependências com o comando npm install. Após isso, criar um arquivo chamado .env no root da pasta e copiar o conteúdo do arquivo .env.example para o arquivo criado. Rodar o comando docker compose up para criar o container do banco de dados. Após o container ser criado, executar o comando npx prisma migrate dev para criar as tabelas no banco de dados. Para popular o banco de dados com usuários e filmes, rode o comando npx prisma db seed. Por último, rode o comando npm run dev para iniciar o servidor.
+
+Um usuário admin foi criado para acessar o projeto. Email: admin@hotmail.com. Senha: 12345678
+
 # 🎥 Biblioteca de Filmes com Recomendações e Avaliações
 
 ## Descrição do Projeto
@@ -45,8 +57,11 @@ Este é um desafio de desenvolvimento onde você criará uma **Biblioteca de Fil
 ## Instruções para Configuração
 
 1. Clone este repositório:
+
    ```bash
    git clone https://github.com/hallslima/desafio-usina.git
    cd desafio-usina
+
+   ```
 
 2. Para entregar o desafio, mande um pull request com uma branch no seu nome.
